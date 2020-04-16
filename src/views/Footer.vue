@@ -171,7 +171,6 @@ export default {
   
 <style lang="scss" scoped>
 /// Footer spacing unit
-
 // $o-footer-spacing-unit: 20px;
 .footer {
   margin-top: 40px;
