@@ -1,7 +1,7 @@
 <template>
-  <footer class="footer footer--theme-dark">
-    <div class="container">
-      <div class="row">
+  <el-container class="footer--theme-dark">
+    <el-footer>
+      <el-row class="footer-list">
         <div class="footerTitle">
           <h6 class="footer_matrix-title">支持</h6>
           <ul class="footer_matrix-content">
@@ -142,20 +142,19 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="row footer_copyright">
+      </el-row>
+      <div class="footer_copyright">
         <small>"@FT中文网 2020."
           <abbr title="Financial Times"
                 aria-label="F T">FT</abbr>
           and ‘Financial Times’ are trademarks of The Financial Times Ltd.
-
         </small>
       </div>
-      <div class="row text-muted">
+      <div class="text-muted">
         <small>测试版 V0.7.14</small>
       </div>
-    </div>
-  </footer>
+    </el-footer>
+  </el-container>
 </template>
     
 <script>
@@ -168,101 +167,7 @@ export default {
   }
 };
 </script>
-  
+
 <style lang="scss" scoped>
-/// Footer spacing unit
-// $o-footer-spacing-unit: 20px;
-.footer {
-  margin-top: 40px;
-  border-top: 10px solid;
-  line-height: 20px;
-  font-size: 16px;
-  position: fixed;
-  // bott: 0;
-
-  a {
-    border-bottom: 0;
-    text-decoration: none;
-  }
-
-  .row {
-    margin-top: 20px !important;
-    padding: 15px 0;
-    align-items: flex-start !important;
-  }
-  .footerTitle {
-    width: 15%;
-    height: inherit;
-    line-height: inherit;
-    text-align: left;
-    display: inline-block;
-    overflow: hidden;
-    clear: both;
-  }
-  // h6
-  .footer_matrix-title {
-    line-height: inherit;
-    font-size: inherit;
-    font-weight: 600;
-  }
-  // ul
-  .footer_matrix-content {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  // li
-  .footer_matrix-link {
-    display: block;
-    padding: 4px 0;
-  }
-}
-.footer--theme-dark {
-  color: #fff;
-  background-color: #33302e;
-  border-color: #0a5e66;
-}
-
-a {
-  color: #b3a9a0;
-  &:hover,
-  &:focus {
-    color: #fff;
-  }
-}
-.footer_copyright {
-  padding: 20px 0;
-  color: #b3a9a0;
-  a {
-    text-decoration: underline;
-  }
-}
-.text-muted {
-  padding: 0;
-  font-size: 80%;
-  font-weight: 400;
-  color: #6c757d !important;
-}
-.footer--theme-light {
-  color: #33302e;
-  background-color: #807973;
-  border-color: #990f3d;
-
-  a {
-    color: #4d4845;
-    &:hover,
-    &:focus {
-      color: #fff;
-    }
-  }
-
-  .footer_copyright {
-    color: #4d4845;
-  }
-}
-
-@media print {
-  .footer {
-    display: none;
-  }
-}
+@import "../assets/style/Footer.scss";
 </style>

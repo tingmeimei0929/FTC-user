@@ -7,6 +7,14 @@
 html {
   background-color: #fff1e5 !important;
   overflow-y: scroll;
+  font-size: 18px;
+}
+
+el-container {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  direction: vertical;
 }
 
 html,
@@ -16,7 +24,7 @@ textarea,
 select,
 button {
   border-color: #59554c;
-  color: #ede0c9;
+  color: #495057;
 }
 
 a {
@@ -47,4 +55,9 @@ textarea:-webkit-autofill,
 select:-webkit-autofill {
   background-color: #545131 !important;
   color: #ede0c9 !important;
+}
+
+ul,
+ol>li {
+  list-style-type: none;
 }
