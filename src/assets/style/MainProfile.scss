@@ -1,0 +1,31 @@
+el-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+
+}
+
+.prompt {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+  padding: .75rem 1.25rem;
+  border: 1px solid transparent;
+  margin-top: 0;
+
+  span {
+    margin-top: 2px;
+  }
+
+  .btn-link {
+    display: inline-block;
+    padding: 0 !important;
+    margin-left: 1rem;
+    color: #0d7680 !important;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: #cce5ff !important;
+  }
+
+}
