@@ -63,7 +63,6 @@
     </el-main>
   </el-container>
 </template>
-    
 <script>
 import { setCookie, getCookie } from '../assets/js/cookie'
 export default {

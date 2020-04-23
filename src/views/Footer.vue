@@ -1,8 +1,8 @@
 <template>
-  <el-container class="footer--theme-dark">
+  <el-container class="footer footer--theme-dark">
     <el-footer>
       <el-row class="footer-list">
-        <div class="footerTitle">
+        <div class="footerTitle footerTitle-sm footerTitle-md">
           <h6 class="footer_matrix-title">支持</h6>
           <ul class="footer_matrix-content">
             <li>
@@ -27,7 +27,7 @@
             </li>
           </ul>
         </div>
-        <div class="footerTitle">
+        <div class="footerTitle  footerTitle-sm footerTitle-md">
           <h6 class="footer_matrix-title">法律事务</h6>
           <ul class="footer_matrix-content">
             <li>
@@ -42,7 +42,7 @@
             </li>
           </ul>
         </div>
-        <div class="footerTitle">
+        <div class="footerTitle  footerTitle-sm footerTitle-md">
           <h6 class="footer_matrix-title">服务</h6>
           <ul class="footer_matrix-content">
             <li>
@@ -72,7 +72,7 @@
             </li>
           </ul>
         </div>
-        <div class="footerTitle">
+        <div class="footerTitle  footerTitle-sm footerTitle-md">
           <h6 class="footer_matrix-title">关注我们</h6>
           <ul class="footer_matrix-content">
             <li>
@@ -102,7 +102,7 @@
             </li>
           </ul>
         </div>
-        <div class="footerTitle">
+        <div class="footerTitle  footerTitle-sm footerTitle-md">
           <h6 class="footer_matrix-title">FT产品</h6>
           <ul class="footer_matrix-content">
             <li>
@@ -132,7 +132,7 @@
             </li>
           </ul>
         </div>
-        <div class="footerTitle">
+        <div class="footerTitle  footerTitle-sm footerTitle-md">
           <h6 class="footer_matrix-title">移动应用</h6>
           <ul class="footer_matrix-content">
             <li>
@@ -156,14 +156,12 @@
     </el-footer>
   </el-container>
 </template>
-    
+
 <script>
 export default {
   name: "Footer",
   data () {
-    return {
-
-    };
+    return {};
   }
 };
 </script>

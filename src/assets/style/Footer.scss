@@ -1,10 +1,7 @@
 .footer--theme-dark {
   color: #fff;
   background-color: #33302e;
-  margin-top: 40px;
-  border-top: 10px solid #0a5e66;
-  line-height: 20px;
-  font-size: 16px;
+  border-color: #0a5e66;
 
   a {
     cursor: pointer;
@@ -17,58 +14,68 @@
       color: #fff;
     }
   }
+}
 
-  .footer-list {
-    margin-top: 20px !important;
+.footer {
+  margin-top: 40px;
+  border-top: 10px solid #0a5e66;
+  line-height: 20px;
+  font-size: 16px;
+
+  el-footer {
     display: flex;
-    align-items: flex-start;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 11.3%;
-    padding-right: 7%;
+    align-items: center;
 
-    .footerTitle {
-      display: inline-block;
+    .footer-list {
+      margin-top: 20px !important;
+      width: 100%;
       flex-wrap: wrap;
 
-      // h6
-      .footer_matrix-title {
-        line-height: inherit;
-        font-size: inherit;
-        font-weight: 600;
-      }
+      .footerTitle {
+        width: 180px;
+        float: left;
 
-      // ul
-      .footer_matrix-content {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        // h6
+        .footer_matrix-title {
+          line-height: inherit;
+          font-size: inherit;
+          font-weight: 600;
+        }
 
-        // li
-        .footer_matrix-link {
-          display: block;
-          padding: 4px 0;
+        // ul
+        .footer_matrix-content {
+          margin-top: 10px;
+          margin-bottom: 10px;
+
+          // li
+          .footer_matrix-link {
+            display: block;
+            padding: 4px 0;
+          }
         }
       }
     }
-  }
 
-  .footer_copyright {
-    margin: 0 11.3%;
-    padding: 1.25rem 0;
-    color: #b3a9a0;
+    .footer_copyright {
+      width: 100%;
+      padding: 1.25rem 0;
+      color: #b3a9a0;
 
-    a {
-      text-decoration: underline;
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    .text-muted {
+      width: 100%;
+      font-weight: 400;
+      padding-bottom: 1rem !important;
+      color: #6c757d !important;
     }
   }
-
-  .text-muted {
-    margin: 0 11.3%;
-    font-weight: 400;
-    padding-bottom: 1rem !important;
-    color: #6c757d !important;
-  }
 }
+
 
 // theme-light
 .footer--theme-light {

@@ -4,60 +4,135 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: #fff1e5 !important;
-  overflow-y: scroll;
-  font-size: 18px;
-}
-
-el-container {
-  padding: 0;
-  margin: 0;
+body {
   height: 100%;
   direction: vertical;
+  background-color: #fff1e5 !important;
+  overflow-y: scroll;
+  font-size: 20px;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
 }
+
 
 html,
 body,
-input,
-textarea,
-select,
-button {
+input {
   border-color: #59554c;
   color: #495057;
 }
 
 a {
-  color: #728596;
+  color: #0d7680;
   text-decoration: none;
+  cursor: pointer;
 }
 
-table {
-  border-color: #4e4a43;
-}
-
-::placeholder {
-  color: #bbb09c;
-}
-
-::selection {
-  background-color: #3d5268;
-  color: #fff8e0;
-}
-
-::-moz-selection {
-  background-color: #3d5268;
-  color: #fff8e0;
-}
-
-input:-webkit-autofill,
-textarea:-webkit-autofill,
-select:-webkit-autofill {
-  background-color: #545131 !important;
-  color: #ede0c9 !important;
+// 按钮
+.btn {
+  text-align: center;
+  font-weight: 400;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  border-radius: 0pc;
+  line-height: 1.5;
+  padding: .375rem .75rem;
+  transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+  cursor: pointer;
 }
 
 ul,
 ol>li {
   list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+// 媒体查询
+@media (min-width: 1200px) {
+
+  el-header,
+  el-main,
+  el-footer {
+    max-width: 1140px;
+
+    .col-sm {
+      min-width: 41.666667%;
+    }
+
+    .footerTitle-md {
+      min-width: 16.666667%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+
+  el-header,
+  el-main,
+  el-footer {
+    min-width: 960px;
+
+    .col-sm {
+      min-width: 50%;
+    }
+
+    .footerTitle-md {
+      min-width: 16.666667%;
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+
+  el-header,
+  el-main,
+  el-footer {
+    min-width: 720px;
+
+    .col-sm {
+      min-width: 58.333333%;
+    }
+
+    .footerTitle-sm {
+      max-width: 50%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  el-header,
+  el-main,
+  el-footer {
+    min-width: 540px;
+  }
+
+}
+
+el-header,
+el-main,
+el-footer {
+  margin: 0 auto;
+  padding: 0 15px;
 }
