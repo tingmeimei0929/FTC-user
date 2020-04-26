@@ -1,19 +1,19 @@
 <template>
-  <el-container>
+  <main>
     <!-- 提示-->
     <div class="prompt">
-      <el-main>
+      <div class="container">
         <span>请验证您的登录邮箱。没有收到验证邮件?</span>
         <button type="submi"
                 class="btn btn-link"
                 data-disable-with="正在发送...">
           重新发送
         </button>
-      </el-main>
+      </div>
     </div>
     <!-- 内容 -->
-    <el-main>
-      <el-row>
+    <div class="container">
+      <div class="main-row">
         <ul class="col-group">
           <li>
             <router-link to="/Profile/Info">我的资料</router-link>
@@ -31,9 +31,9 @@
         <div>
           <router-view></router-view>
         </div>
-      </el-row>
-    </el-main>
-  </el-container>
+      </div>
+    </div>
+  </main>
 </template>
 
 <script>

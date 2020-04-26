@@ -13,23 +13,16 @@
 
 <style lang="scss">
 #app {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  border: hidden;
 }
 
-header-vue {
-  flex-shrink: 0;
-  display: block;
-}
-
-.main,
-footer-vue {
-  overflow-y: scroll;
-  display: block;
-}
 .main {
   min-height: 80vh;
 }

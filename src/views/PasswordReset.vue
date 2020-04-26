@@ -1,6 +1,6 @@
 <template>
-  <el-container>
-    <el-main>
+  <main>
+    <div class="container">
       <div class="main-row">
         <div class="
            col-sm">
@@ -23,8 +23,8 @@
         </div>
       </div>
       <router-view></router-view>
-    </el-main>
-  </el-container>
+    </div>
+  </main>
 </template>
     
 <script>

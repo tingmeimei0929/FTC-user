@@ -1,6 +1,6 @@
 <template>
-  <el-container>
-    <el-main>
+  <main>
+    <div class="container">
       <div class="main-row">
         <div class="col-sm">
           <h4 class="text-center">创建FT中文网账号</h4>
@@ -59,8 +59,8 @@
         </div>
       </div>
       <router-view></router-view>
-    </el-main>
-  </el-container>
+    </div>
+  </main>
 </template>
 
 <script>

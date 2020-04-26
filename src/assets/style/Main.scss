@@ -1,12 +1,11 @@
-el-main {
+.container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 
   .main-row {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
 
 

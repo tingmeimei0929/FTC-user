@@ -1,6 +1,6 @@
 <template>
-  <el-container class="footer footer--theme-dark">
-    <el-footer>
+  <footer class="footer footer--theme-dark">
+    <div class="container">
       <div class="footer-list">
         <div class="footerTitle footerTitle-sm footerTitle-md">
           <h6 class="footer_matrix-title">支持</h6>
@@ -153,8 +153,8 @@
       <div class="text-muted">
         <small>测试版 V0.7.14</small>
       </div>
-    </el-footer>
-  </el-container>
+    </div>
+  </footer>
 </template>
 
 <script>

@@ -5,12 +5,10 @@
 }
 
 body {
-  height: 100%;
   direction: vertical;
   background-color: #fff1e5 !important;
   overflow-y: scroll;
   font-size: 20px;
-  margin: 0;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -18,13 +16,11 @@ body {
   text-align: left;
 }
 
-
-html,
-body,
 input {
   border-color: #59554c;
   color: #495057;
 }
+
 
 a {
   color: #0d7680;
@@ -70,13 +66,11 @@ h6 {
 // 媒体查询
 @media (min-width: 1200px) {
 
-  el-header,
-  el-main,
-  el-footer {
+  .container {
     max-width: 1140px;
 
     .col-sm {
-      min-width: 41.666667%;
+      max-width: 58.333333%;
     }
 
     .footerTitle-md {
@@ -87,13 +81,11 @@ h6 {
 
 @media (max-width: 992px) {
 
-  el-header,
-  el-main,
-  el-footer {
+  .container {
     min-width: 960px;
 
     .col-sm {
-      min-width: 50%;
+      max-width: 50%;
     }
 
     .footerTitle-md {
@@ -104,14 +96,15 @@ h6 {
 }
 
 @media (max-width: 768px) {
+  #app {
+    width: 0;
+  }
 
-  el-header,
-  el-main,
-  el-footer {
+  .container {
     min-width: 720px;
 
     .col-sm {
-      min-width: 58.333333%;
+      max-width: 58.333333%;
     }
 
     .footerTitle-sm {
@@ -121,18 +114,17 @@ h6 {
 }
 
 @media (max-width: 576px) {
+  #app {
+    width: 0;
+  }
 
-  el-header,
-  el-main,
-  el-footer {
+  .container {
     min-width: 540px;
   }
 
 }
 
-el-header,
-el-main,
-el-footer {
+.container {
   margin: 0 auto;
   padding: 0 15px;
 }

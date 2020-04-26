@@ -1,6 +1,6 @@
 <template>
-  <el-container class="navbar">
-    <el-header>
+  <header class="navbar">
+    <div class="container">
       <a class="header-brand"
          href="http://www.ftchinese.com"
          target="__blank">FT中文网</a>
@@ -13,8 +13,8 @@
           <option><a href="/login">退出</a></option>
         </select>
       </div> -->
-    </el-header>
-  </el-container>
+    </div>
+  </header>
 </template>
     
 <script>

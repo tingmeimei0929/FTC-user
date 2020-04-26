@@ -1,6 +1,6 @@
 <template>
-  <el-container>
-    <el-main>
+  <main>
+    <div class="container">
       <div class="main-row">
         <div class="col-sm">
           <h4 class="text-center">登录FT中文网</h4>
@@ -59,8 +59,8 @@
           </div>
         </div>
       </div>
-    </el-main>
-  </el-container>
+    </div>
+  </main>
 </template>
 <script>
 import { setCookie, getCookie } from '../assets/js/cookie'
