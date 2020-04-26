@@ -28,7 +28,7 @@
             <router-link to="/Profile/Collect">收藏的文章</router-link>
           </li>
         </ul>
-        <div class="col-auto">
+        <div>
           <router-view></router-view>
         </div>
       </el-row>

@@ -1,8 +1,9 @@
 <template>
   <el-container>
     <el-main>
-      <el-row>
-        <div class="col-sm">
+      <div class="main-row">
+        <div class="
+           col-sm">
           <h4 class="text-center">找回密码</h4>
           <form method="post">
             <div class="form-group">
@@ -20,7 +21,7 @@
                     data-disable-with="正在发送...">发送邮件</button>
           </form>
         </div>
-      </el-row>
+      </div>
       <router-view></router-view>
     </el-main>
   </el-container>

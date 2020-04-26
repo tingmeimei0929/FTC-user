@@ -1,31 +1,24 @@
 <template>
-  <el-conatiner>
-    <el-main>
-      <el-row>
-        <div class="col-auto">
-          <form method="post">
-            <div class="form-group">
-              <label for="name"
-                     class="form-label">登录邮箱</label>
-              <input class="form-control"
-                     type="text"
-                     id="email"
-                     name="email"
-                     placeholder="email@example.org" />
+  <div class="col-auto">
+    <h5 class="form-top">登录邮箱</h5>
+    <form method="post">
+      <div class="form-group">
+        <input class="form-control"
+               type="text"
+               id="email"
+               name="email"
+               placeholder="email@example.org" />
 
-              <button type="submit"
-                      data-disable-with="更新..."
-                      class="btn btn-primary">
-                更新
-              </button>
-            </div>
-          </form>
+        <button type="submit"
+                data-disable-with="更新..."
+                class="btn btn-primary">
+          更新
+        </button>
+      </div>
+    </form>
 
-          <router-view></router-view>
-        </div>
-      </el-row>
-    </el-main>
-  </el-conatiner>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>

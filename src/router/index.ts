@@ -54,40 +54,11 @@ const routes: Array<RouteConfig> = [
         path: "Info",
         name: 'Info',
         component: Info,
-        children: [
-          {
-            path: "infoName",
-            name: 'InfoName',
-            component: InfoName,
-          },
-          {
-            path: "phone",
-            name: 'Phone',
-            component: Phone,
-          },
-          {
-            path: "personalInfo",
-            name: 'PersonalInfo',
-            component: PersonalInfo,
-          }
-        ]
       },
       {
         path: "Account",
         name: "Account",
         component: Account,
-        children: [
-          {
-            path: "AccountEmail",
-            name: 'AccountEmail',
-            component: AccountEmail,
-          },
-          {
-            path: "ChangePassword",
-            name: 'ChangePassword',
-            component: ChangePassword,
-          }
-        ]
       },
       {
         path: "Member",
@@ -98,6 +69,31 @@ const routes: Array<RouteConfig> = [
         path: "Collect",
         name: "Collect",
         component: Collect
+      },
+      {
+        path: "infoName",
+        name: 'InfoName',
+        component: InfoName,
+      },
+      {
+        path: "phone",
+        name: 'Phone',
+        component: Phone,
+      },
+      {
+        path: "personalInfo",
+        name: 'PersonalInfo',
+        component: PersonalInfo,
+      },
+      {
+        path: "AccountEmail",
+        name: 'AccountEmail',
+        component: AccountEmail,
+      },
+      {
+        path: "ChangePassword",
+        name: 'ChangePassword',
+        component: ChangePassword,
       }
     ]
   },

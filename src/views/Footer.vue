@@ -1,7 +1,7 @@
 <template>
   <el-container class="footer footer--theme-dark">
     <el-footer>
-      <el-row class="footer-list">
+      <div class="footer-list">
         <div class="footerTitle footerTitle-sm footerTitle-md">
           <h6 class="footer_matrix-title">支持</h6>
           <ul class="footer_matrix-content">
@@ -142,7 +142,7 @@
             </li>
           </ul>
         </div>
-      </el-row>
+      </div>
       <div class="footer_copyright">
         <small>"@FT中文网 2020."
           <abbr title="Financial Times"

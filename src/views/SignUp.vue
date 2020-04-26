@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-main>
-      <el-row>
+      <div class="main-row">
         <div class="col-sm">
           <h4 class="text-center">创建FT中文网账号</h4>
           <form method="post">
@@ -57,7 +57,7 @@
             <a href="/login">登录</a>
           </p>
         </div>
-      </el-row>
+      </div>
       <router-view></router-view>
     </el-main>
   </el-container>

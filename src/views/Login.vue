@@ -1,11 +1,10 @@
 <template>
   <el-container>
     <el-main>
-      <el-row>
+      <div class="main-row">
         <div class="col-sm">
           <h4 class="text-center">登录FT中文网</h4>
-          <form method="post"
-                id="LoginForm">
+          <form method="post">
             <div class="form-group">
               <label for="email"
                      class="form-label">邮箱</label>
@@ -59,7 +58,7 @@
             </a>
           </div>
         </div>
-      </el-row>
+      </div>
     </el-main>
   </el-container>
 </template>

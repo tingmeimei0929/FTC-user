@@ -1,32 +1,25 @@
 <template>
-  <el-conatiner>
-    <el-main>
-      <el-row>
-        <div class="col-auto">
-          <form method="post">
-            <div class="form-group">
-              <label for="name"
-                     class="form-label">用户名</label>
-              <input class="form-control"
-                     type="text"
-                     id="userName"
-                     name="userName"
-                     maxlength="24"
-                     required />
-              <small class="form-text text-muted">20字符以内 </small>
-              <button type="submit"
-                      data-disable-with="保存..."
-                      class="btn btn-primary">
-                保存
-              </button>
-            </div>
-          </form>
+  <div class="col-auto">
+    <h5 class="form-top">用户名</h5>
+    <form method="post">
+      <div class="form-group">
+        <input class="form-control"
+               type="text"
+               id="userName"
+               name="userName"
+               maxlength="24"
+               required />
+        <small class="form-text text-muted">20字符以内 </small>
+        <button type="submit"
+                data-disable-with="保存..."
+                class="btn btn-primary">
+          保存
+        </button>
+      </div>
+    </form>
 
-          <router-view></router-view>
-        </div>
-      </el-row>
-    </el-main>
-  </el-conatiner>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
