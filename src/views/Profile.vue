@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <div>
     <!-- 提示-->
     <div class="prompt">
       <div class="container">
@@ -12,28 +12,30 @@
       </div>
     </div>
     <!-- 内容 -->
-    <div class="container">
-      <div class="main-row">
-        <ul class="col-group">
-          <li>
-            <router-link to="/Profile/Info">我的资料</router-link>
-          </li>
-          <li>
-            <router-link to="/Profile/Account">账号安全</router-link>
-          </li>
-          <li>
-            <router-link to="/Profile/Member">会员</router-link>
-          </li>
-          <li>
-            <router-link to="/Profile/Collect">收藏的文章</router-link>
-          </li>
-        </ul>
-        <div>
-          <router-view></router-view>
+    <main>
+      <div class="container">
+        <div class="main-row">
+          <ul class="col-group">
+            <li>
+              <router-link to="/Profile/Info">我的资料</router-link>
+            </li>
+            <li>
+              <router-link to="/Profile/Account">账号安全</router-link>
+            </li>
+            <li>
+              <router-link to="/Profile/Member">会员</router-link>
+            </li>
+            <li>
+              <router-link to="/Profile/Collect">收藏的文章</router-link>
+            </li>
+          </ul>
+          <div>
+            <router-view></router-view>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
+  </div>
 </template>
 
 <script>

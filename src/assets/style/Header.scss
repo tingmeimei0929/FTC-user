@@ -1,13 +1,11 @@
 .navbar {
+  position: relative;
   border-bottom: 1px solid #ccc1b7;
   padding: .5rem 0;
 }
 
 .navbar .container {
-  display: flex;
   justify-content: space-between !important;
-  flex-wrap: wrap;
-  align-items: center;
 
   a {
     display: inline-block;

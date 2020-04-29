@@ -1,155 +1,157 @@
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+main {
+  position: relative;
 
-  .main-row {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  .container {
+    .main-row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      position: relative;
 
 
-    // login
-    .col-sm {
-      height: auto;
-      margin: 0 auto;
-      margin-top: 1.5rem;
+      // login
+      .row-col {
+        height: auto;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        position: relative;
 
-      a {
-        color: #0d7680;
-      }
+        a {
+          color: #0d7680;
+        }
 
-      a:hover {
-        color: #252423 !important;
-        text-decoration: underline;
-      }
+        a:hover {
+          color: #252423 !important;
+          text-decoration: underline;
+        }
 
-      //  h4
-      .text-center {
-        margin: 0;
-        text-align: center !important;
-        font-size: 1.5rem !important;
-
-        &.p-2 {
-          font-size: 1rem !important;
-          padding-top: 1rem !important;
+        //  h4
+        .text-center {
           margin: 0;
-          margin-bottom: 1rem;
+          text-align: center !important;
+          font-size: 1.5rem !important;
 
-          &.margin-0 {
-            padding-top: 0 !important;
+          &.p-2 {
+            font-size: 1rem !important;
+            padding-top: 1rem !important;
+            margin: 0;
+            margin-bottom: 1rem;
+
+            &.margin-0 {
+              padding-top: 0 !important;
+            }
+          }
+
+          &.p-3 {
+            font-size: 1rem !important;
+            margin-top: 10px;
+            margin-bottom: 1rem;
+          }
+
+          &.weChat {
+            margin-top: 3rem;
           }
         }
 
-        &.p-3 {
-          font-size: 1rem !important;
-          margin-top: 10px;
+        // form-list
+        .form-group {
           margin-bottom: 1rem;
+
+          // 名称
+          .form-label {
+            display: flex;
+            justify-content: start;
+            font-weight: 600;
+            color: #33302e;
+            margin-bottom: .5rem;
+          }
+
+          // input
+          .form-control {
+            border-radius: 0;
+            display: block;
+            width: 100%;
+            height: calc(1.5em + .75rem + 2px);
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057 !important;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+          }
+
+          input {
+            border-color: #59554c;
+            color: #495057;
+            overflow: visible;
+            margin: 0;
+            font-family: initial;
+            text-rendering: auto;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            text-align: start;
+            cursor: text;
+            font: 400 11px system-ui;
+          }
         }
 
-        &.weChat {
-          margin-top: 3rem;
+
+        .form-check {
+          position: relative;
+          padding-left: 1.25rem;
+
+          input[type=checkbox] {
+            box-sizing: border-box;
+            padding: 0;
+          }
         }
-      }
 
-      // form-list
-      .form-group {
-        margin-bottom: 1rem;
-
-        // 名称
-        .form-label {
-          display: flex;
-          justify-content: start;
-          font-weight: 600;
-          color: #33302e;
+        label {
+          display: inline-block;
           margin-bottom: .5rem;
+          color: #212529;
         }
 
-        // input
-        .form-control {
-          border-radius: 0;
+        // button
+        .btn-block {
           display: block;
           width: 100%;
-          height: calc(1.5em + .75rem + 2px);
-          padding: .375rem .75rem;
-          font-size: 1rem;
+        }
+
+        .btn-primary {
+          border-color: #007bff;
+          background-color: #0d7680;
+          color: #fff;
+        }
+
+
+        // p
+        .text-center {
+          margin-bottom: 1rem;
+          color: #212529;
+          text-align: center !important;
+        }
+
+        .text-muted {
+          color: #6c757d !important;
+        }
+
+        .form-text {
+          display: block;
+          margin-top: .25rem;
+        }
+
+        small {
+          font-size: 80%;
           font-weight: 400;
-          line-height: 1.5;
-          color: #495057 !important;
-          background-color: #fff;
-          background-clip: padding-box;
-          border: 1px solid #ced4da;
-          border-radius: .25rem;
-          transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
         }
-
-        input {
-          border-color: #59554c;
-          color: #495057;
-          overflow: visible;
-          margin: 0;
-          font-family: initial;
-          text-rendering: auto;
-          letter-spacing: normal;
-          word-spacing: normal;
-          text-transform: none;
-          text-indent: 0px;
-          text-shadow: none;
-          text-align: start;
-          cursor: text;
-          font: 400 11px system-ui;
-        }
-      }
-
-
-      .form-check {
-        position: relative;
-        padding-left: 1.25rem;
-
-        input[type=checkbox] {
-          box-sizing: border-box;
-          padding: 0;
-        }
-      }
-
-      label {
-        display: inline-block;
-        margin-bottom: .5rem;
-        color: #212529;
-      }
-
-      // button
-      .btn-block {
-        display: block;
-        width: 100%;
-      }
-
-      .btn-primary {
-        border-color: #007bff;
-        background-color: #0d7680;
-        color: #fff;
-      }
-
-
-      // p
-      .text-center {
-        margin-bottom: 1rem;
-        color: #212529;
-        text-align: center !important;
-      }
-
-      .text-muted {
-        color: #6c757d !important;
-      }
-
-      .form-text {
-        display: block;
-        margin-top: .25rem;
-      }
-
-      small {
-        font-size: 80%;
-        font-weight: 400;
       }
     }
   }

@@ -6,25 +6,25 @@
          target="__blank">FT中文网</a>
       <a class="header-brand2"
          href="/login"
-         v-show="showLogin">登录</a>
-      <!-- <div v-show="showHome">
-        <select>登录
-          <option><a href="#">{{ msg }}</a></option>
-          <option><a href="/login">退出</a></option>
-        </select>
-      </div> -->
+         v-if="!this.$store.state.user">登录</a>
+      <select v-else>设置
+        <option>{{ this.$store.state.user }} </option>
+        <option><a href="/login">退出</a></option>
+      </select>
     </div>
   </header>
 </template>
-    
+
 <script>
+import store from "../store/index";
 export default {
   name: "Header",
+  store,
   data () {
     return {
-      showLogin: 'true',
-      showHome: 'false',
-      msg: ''
+      showLogin: "true",
+      showHome: "false",
+      msg: ""
     };
   }
 };

@@ -2,7 +2,7 @@
   <main>
     <div class="container">
       <div class="main-row">
-        <div class="col-sm">
+        <div class="row-col">
           <h4 class="text-center">创建FT中文网账号</h4>
           <form method="post">
             <div class="form-group">

@@ -16,6 +16,7 @@ import Member from "../views/Member.vue";
 import PersonalInfo from "../views/PersonalInfo.vue";
 import AccountEmail from "../views/AccountEmail.vue";
 import ChangePassword from "../views/ChangePassword.vue";
+import store from '@/store';
 
 
 
@@ -106,9 +107,23 @@ const routes: Array<RouteConfig> = [
     }
   },
 ];
-
+// 使用 router.beforeEach 注册一个全局前置守卫，判断用户是否登陆
 const router = new VueRouter({
-  routes
+  routes: routes
 });
+// router.beforeEach((to, from, next) => {
+//   if (to.path === "/") {
+//     next()
+//   } else if (to.path === "{ name: 'Profile' } ") {
+//     //  获取本地存储的token的值
+//     const token = localStorage.getItem('Authorization')
 
-export default router;
+//     if (token === null || token === '') {
+//       next("{ name: 'Login' } ")
+//     } else {
+//       next()
+//     }
+//   }
+// })
+
+export default router
